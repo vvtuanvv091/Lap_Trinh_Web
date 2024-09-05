@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap02\\Baitap02.csproj": {}
+    "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap02\\Baitap02.csproj": {}
   },
   "projects": {
-    "C:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap02\\Baitap02.csproj": {
+    "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap02\\Baitap02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap02\\Baitap02.csproj",
+        "projectUniqueName": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap02\\Baitap02.csproj",
         "projectName": "Baitap02",
-        "projectPath": "C:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap02\\Baitap02.csproj",
+        "projectPath": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap02\\Baitap02.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap02\\obj\\",
+        "outputPath": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap02\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

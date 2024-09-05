@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z1qNjdyGH18=",
+  "dgSpecHash": "5gYIHjQbptM=",
   "success": true,
-  "projectFilePath": "C:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap02\\Baitap02.csproj",
+  "projectFilePath": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap02\\Baitap02.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
