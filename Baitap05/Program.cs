@@ -22,6 +22,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=TheLoai}/{action=Index}/{id?}");
+    pattern: "{controller=TheLoai}/{action=Index2}/{id?}");
+
 
 app.Run();
