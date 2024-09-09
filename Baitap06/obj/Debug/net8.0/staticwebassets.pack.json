@@ -1,0 +1,545 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Baitap06.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Baitap06.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\css\\Styless.css",
+      "PackagePath": "staticwebassets\\css\\Styless.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\css\\nice-select.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\css\\slicknav.min.css",
+      "PackagePath": "staticwebassets\\css\\slicknav.min.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\fonts\\FuturaBT-Book.eot",
+      "PackagePath": "staticwebassets\\fonts\\FuturaBT-Book.eot"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\fonts\\FuturaBT-Book.otf",
+      "PackagePath": "staticwebassets\\fonts\\FuturaBT-Book.otf"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\fonts\\FuturaBT-Book.svg",
+      "PackagePath": "staticwebassets\\fonts\\FuturaBT-Book.svg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\fonts\\FuturaBT-Book.ttf",
+      "PackagePath": "staticwebassets\\fonts\\FuturaBT-Book.ttf"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\fonts\\FuturaBT-Book.woff",
+      "PackagePath": "staticwebassets\\fonts\\FuturaBT-Book.woff"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\add.jpg",
+      "PackagePath": "staticwebassets\\img\\add.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\cart\\cart-1.jpg",
+      "PackagePath": "staticwebassets\\img\\cart\\cart-1.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\f-box-1.jpg",
+      "PackagePath": "staticwebassets\\img\\f-box-1.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\f-box-2.jpg",
+      "PackagePath": "staticwebassets\\img\\f-box-2.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\f-box-3.jpg",
+      "PackagePath": "staticwebassets\\img\\f-box-3.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\icons\\bag.png",
+      "PackagePath": "staticwebassets\\img\\icons\\bag.png"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\icons\\chat.png",
+      "PackagePath": "staticwebassets\\img\\icons\\chat.png"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\icons\\coin.png",
+      "PackagePath": "staticwebassets\\img\\icons\\coin.png"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\icons\\delivery.png",
+      "PackagePath": "staticwebassets\\img\\icons\\delivery.png"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\icons\\f-delivery.png",
+      "PackagePath": "staticwebassets\\img\\icons\\f-delivery.png"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\icons\\man.png",
+      "PackagePath": "staticwebassets\\img\\icons\\man.png"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\icons\\sales.png",
+      "PackagePath": "staticwebassets\\img\\icons\\sales.png"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\icons\\search.png",
+      "PackagePath": "staticwebassets\\img\\icons\\search.png"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\icons\\voucher.png",
+      "PackagePath": "staticwebassets\\img\\icons\\voucher.png"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\icons\\zoom-plus.png",
+      "PackagePath": "staticwebassets\\img\\icons\\zoom-plus.png"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\logos\\logo-1.png",
+      "PackagePath": "staticwebassets\\img\\logos\\logo-1.png"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\logos\\logo-2.png",
+      "PackagePath": "staticwebassets\\img\\logos\\logo-2.png"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\logos\\logo-3.png",
+      "PackagePath": "staticwebassets\\img\\logos\\logo-3.png"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\logos\\logo-4.png",
+      "PackagePath": "staticwebassets\\img\\logos\\logo-4.png"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\logos\\logo-5.png",
+      "PackagePath": "staticwebassets\\img\\logos\\logo-5.png"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\lookbok.jpg",
+      "PackagePath": "staticwebassets\\img\\lookbok.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\mastercard.jpg",
+      "PackagePath": "staticwebassets\\img\\mastercard.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\paypal.jpg",
+      "PackagePath": "staticwebassets\\img\\paypal.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\product\\product-1.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\product-1.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\products\\img-1.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\img-1.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\products\\img-10.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\img-10.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\products\\img-11.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\img-11.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\products\\img-12.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\img-12.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\products\\img-13.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\img-13.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\products\\img-14.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\img-14.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\products\\img-15.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\img-15.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\products\\img-2.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\img-2.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\products\\img-3.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\img-3.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\products\\img-4.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\img-4.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\products\\img-5.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\img-5.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\products\\img-6.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\img-6.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\products\\img-7.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\img-7.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\products\\img-8.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\img-8.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\products\\img-9.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\img-9.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\slider-1.jpg",
+      "PackagePath": "staticwebassets\\img\\slider-1.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\slider-2.jpg",
+      "PackagePath": "staticwebassets\\img\\slider-2.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\img\\slider-3.jpg",
+      "PackagePath": "staticwebassets\\img\\slider-3.jpg"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\js\\jquery.slicknav.js",
+      "PackagePath": "staticwebassets\\js\\jquery.slicknav.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\js\\mixitup.min.js",
+      "PackagePath": "staticwebassets\\js\\mixitup.min.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Baitap06\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Baitap06.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Baitap06.props",
+      "PackagePath": "build\\Baitap06.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Baitap06.props",
+      "PackagePath": "buildMultiTargeting\\Baitap06.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Baitap06.props",
+      "PackagePath": "buildTransitive\\Baitap06.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
