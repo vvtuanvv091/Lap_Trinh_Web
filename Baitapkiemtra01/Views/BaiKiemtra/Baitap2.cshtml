@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "Baitap2";
+}
+@model SanPhamViewModel
+<h1>Baitap2</h1>
+<div class="product-details">
+    <h2>Tên sản phẩm là :@Model.Tensp</h2>
+    <p>Price: @Model.giaban.ToString("C")</p>
+    <img src="@Model.anh" alt="@Model.Tensp" />
+</div>
+
