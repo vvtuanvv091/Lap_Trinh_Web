@@ -25,7 +25,7 @@ namespace Baitapkiemtra01.Controllers
             {
                 Tensp = "Qua chuoi nho nho",
                 giaban = 25.000,
-                anh= "/images/chuoi.jpg",
+                anh= "",
             };
 
             return View(SanPham);
