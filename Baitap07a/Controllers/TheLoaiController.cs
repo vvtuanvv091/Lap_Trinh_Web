@@ -75,6 +75,35 @@ namespace Baitap07a.Controllers
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public IActionResult details (int id)
+        {
+            if (id == 0)
+            {
+                return NotFound();
+            }
+            var theloai = _db.TheLoai.Find(id);
+            return View(theloai);
+        }
+        [HttpGet]
+        public IActionResult Search(String search)
+        {
+            if (!string.IsNullOrEmpty(search))
+            {
+                var theloai = _db.TheLoai.Where(tl => tl.Name
+                .Contains(search)).ToList();
+                ViewBag.Search = search;
+                ViewBag.TheLoai = theloai;
+
+            }
+            else
+            {
+                var theloai = _db.TheLoai.ToList();
+                ViewBag.TheLoai = theloai;
+            }
+            return View("Index");
+        }
+
 
     }
 }
