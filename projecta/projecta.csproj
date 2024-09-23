@@ -24,8 +24,6 @@
 
   <ItemGroup>
     <Folder Include="Areas\khachhang\Controllers\" />
-    <Folder Include="Areas\khachhang\Views\" />
-    <Folder Include="Areas\quantrivien\Views\" />
   </ItemGroup>
 
 </Project>

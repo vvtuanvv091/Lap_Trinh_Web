@@ -12,6 +12,6 @@ namespace projecta.Models
         public string Name { get; set; }
         [Required(ErrorMessage ="Vui lòng Chọn ngày tháng năm bạn muốn")]
         [Display(Name="Ngày Tạo")]
-        public DateTime DateCreated { get; set; } = DateTime.Now;
+        public DateTime DateCreated { get; set; } = DateTime.Now;   
     }
 }

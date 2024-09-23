@@ -2,9 +2,9 @@
 using projecta.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace projecta.Controllers
+namespace projecta.quantrivien.Controllers
 {
-    [Area("admin")]
+    [Area("quantrivien")]
     public class TheLoaiController : Controller
     {
         private readonly ApplicationDbContext _db;
@@ -48,7 +48,7 @@ namespace projecta.Controllers
         {
             if (ModelState.IsValid)
             {
-                _db.TheLoai.Update(theloai);
+                _db.TheLoai.Update(theloai);    
                 _db.SaveChanges();
                 return RedirectToAction("Index");
             }

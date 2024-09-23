@@ -35,9 +35,12 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+//app.MapControllerRoute(
+//    name: "default",
+//    pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    name:"default",
+    pattern:"{area=quantrivien}/{controller=TheLoai}/{action=Index}/{id?}");
 app.MapRazorPages();
 
 app.Run();
