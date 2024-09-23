@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using projecta.Data;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -15,7 +15,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
-builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
