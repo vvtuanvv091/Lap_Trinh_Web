@@ -47,8 +47,8 @@ namespace BaiKiemTra02.Controllers
             {
                 return NotFound();
             }
-            var theloai = _db.LopHoc.Find(id);
-            return View();
+            var lophoc = _db.LopHoc.Find(id);
+            return View(lophoc);
         }
 
         [HttpPost]
@@ -62,7 +62,7 @@ namespace BaiKiemTra02.Controllers
                 _db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(lopHoc);
+            return View();
         }
 
         [HttpGet]
@@ -72,8 +72,8 @@ namespace BaiKiemTra02.Controllers
             {
                 return NotFound();
             }
-            var theloai = _db.LopHoc.Find(id);
-            return View();
+            var lophoc = _db.LopHoc.Find(id);
+            return View(lophoc);
         }
 
         [HttpPost]

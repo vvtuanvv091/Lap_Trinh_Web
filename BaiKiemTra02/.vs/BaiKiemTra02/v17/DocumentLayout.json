@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F669FAA3-D318-49BD-B617-9677702AD0AE}|BaiKiemTra02\\BaiKiemTra02.csproj|d:\\lap_trinh_web\\lap_trinh_web\\baikiemtra02\\baikiemtra02\\controllers\\lophoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F669FAA3-D318-49BD-B617-9677702AD0AE}|BaiKiemTra02\\BaiKiemTra02.csproj|solutionrelative:baikiemtra02\\controllers\\lophoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F669FAA3-D318-49BD-B617-9677702AD0AE}|BaiKiemTra02\\BaiKiemTra02.csproj|d:\\lap_trinh_web\\lap_trinh_web\\baikiemtra02\\baikiemtra02\\views\\lophoc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F669FAA3-D318-49BD-B617-9677702AD0AE}|BaiKiemTra02\\BaiKiemTra02.csproj|solutionrelative:baikiemtra02\\views\\lophoc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F669FAA3-D318-49BD-B617-9677702AD0AE}|BaiKiemTra02\\BaiKiemTra02.csproj|d:\\lap_trinh_web\\lap_trinh_web\\baikiemtra02\\baikiemtra02\\views\\lophoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F669FAA3-D318-49BD-B617-9677702AD0AE}|BaiKiemTra02\\BaiKiemTra02.csproj|solutionrelative:baikiemtra02\\views\\lophoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\Data\\Migrations\\20240924082356_hoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BaiKiemTra02\\Data\\Migrations\\20240924082356_hoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F669FAA3-D318-49BD-B617-9677702AD0AE}|BaiKiemTra02\\BaiKiemTra02.csproj|d:\\lap_trinh_web\\lap_trinh_web\\baikiemtra02\\baikiemtra02\\views\\lophoc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -31,10 +31,6 @@
       "RelativeMoniker": "D:0:0:{F669FAA3-D318-49BD-B617-9677702AD0AE}|BaiKiemTra02\\BaiKiemTra02.csproj|solutionrelative:baikiemtra02\\models\\lophoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F669FAA3-D318-49BD-B617-9677702AD0AE}|BaiKiemTra02\\BaiKiemTra02.csproj|d:\\lap_trinh_web\\lap_trinh_web\\baikiemtra02\\baikiemtra02\\controllers\\lophoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F669FAA3-D318-49BD-B617-9677702AD0AE}|BaiKiemTra02\\BaiKiemTra02.csproj|solutionrelative:baikiemtra02\\controllers\\lophoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F669FAA3-D318-49BD-B617-9677702AD0AE}|BaiKiemTra02\\BaiKiemTra02.csproj|d:\\lap_trinh_web\\lap_trinh_web\\baikiemtra02\\baikiemtra02\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F669FAA3-D318-49BD-B617-9677702AD0AE}|BaiKiemTra02\\BaiKiemTra02.csproj|solutionrelative:baikiemtra02\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -45,6 +41,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{F669FAA3-D318-49BD-B617-9677702AD0AE}|BaiKiemTra02\\BaiKiemTra02.csproj|d:\\lap_trinh_web\\lap_trinh_web\\baikiemtra02\\baikiemtra02\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{F669FAA3-D318-49BD-B617-9677702AD0AE}|BaiKiemTra02\\BaiKiemTra02.csproj|solutionrelative:baikiemtra02\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F669FAA3-D318-49BD-B617-9677702AD0AE}|BaiKiemTra02\\BaiKiemTra02.csproj|d:\\lap_trinh_web\\lap_trinh_web\\baikiemtra02\\baikiemtra02\\data\\migrations\\20240924082356_hoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F669FAA3-D318-49BD-B617-9677702AD0AE}|BaiKiemTra02\\BaiKiemTra02.csproj|solutionrelative:baikiemtra02\\data\\migrations\\20240924082356_hoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,20 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20240924082356_hoc.cs",
-              "DocumentMoniker": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\Data\\Migrations\\20240924082356_hoc.cs",
-              "RelativeDocumentMoniker": "BaiKiemTra02\\Data\\Migrations\\20240924082356_hoc.cs",
-              "ToolTip": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\Data\\Migrations\\20240924082356_hoc.cs",
-              "RelativeToolTip": "BaiKiemTra02\\Data\\Migrations\\20240924082356_hoc.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:23:56.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "BaiKiemTra02\\Data\\ApplicationDbContext.cs",
@@ -103,12 +90,11 @@
               "RelativeToolTip": "BaiKiemTra02\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:18:42.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T08:18:42.093Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\appsettings.json",
               "RelativeDocumentMoniker": "BaiKiemTra02\\appsettings.json",
@@ -116,12 +102,11 @@
               "RelativeToolTip": "BaiKiemTra02\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-24T08:17:21.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T08:17:21.568Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\Program.cs",
               "RelativeDocumentMoniker": "BaiKiemTra02\\Program.cs",
@@ -129,8 +114,7 @@
               "RelativeToolTip": "BaiKiemTra02\\Program.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAAACkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:17:18.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T08:17:18.263Z"
             },
             {
               "$type": "Document",
@@ -142,18 +126,17 @@
               "RelativeToolTip": "BaiKiemTra02\\Views\\LopHoc\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-24T08:03:50.324Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T08:03:50.324Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\Views\\LopHoc\\Delete.cshtml",
               "RelativeDocumentMoniker": "BaiKiemTra02\\Views\\LopHoc\\Delete.cshtml",
               "ToolTip": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\Views\\LopHoc\\Delete.cshtml",
               "RelativeToolTip": "BaiKiemTra02\\Views\\LopHoc\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-24T07:47:56.414Z",
               "EditorCaption": ""
@@ -168,8 +151,7 @@
               "RelativeToolTip": "BaiKiemTra02\\Views\\LopHoc\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-24T07:41:43.221Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T07:41:43.221Z"
             },
             {
               "$type": "Document",
@@ -181,12 +163,11 @@
               "RelativeToolTip": "BaiKiemTra02\\Views\\LopHoc\\Create.cshtml",
               "ViewState": "AgIAAAQAAAAAAAAAAAAAABIAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-24T07:37:09.399Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T07:37:09.399Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\Views\\LopHoc\\Index.cshtml",
               "RelativeDocumentMoniker": "BaiKiemTra02\\Views\\LopHoc\\Index.cshtml",
@@ -194,8 +175,7 @@
               "RelativeToolTip": "BaiKiemTra02\\Views\\LopHoc\\Index.cshtml",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAACAAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-24T07:29:15.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T07:29:15.335Z"
             },
             {
               "$type": "Document",
@@ -207,21 +187,32 @@
               "RelativeToolTip": "BaiKiemTra02\\Models\\LopHoc.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T07:27:53.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T07:27:53.722Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "LopHocController.cs",
               "DocumentMoniker": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\Controllers\\LopHocController.cs",
               "RelativeDocumentMoniker": "BaiKiemTra02\\Controllers\\LopHocController.cs",
               "ToolTip": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\Controllers\\LopHocController.cs",
               "RelativeToolTip": "BaiKiemTra02\\Controllers\\LopHocController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAACEAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAA9wDIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T07:24:21.202Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20240924082356_hoc.cs",
+              "DocumentMoniker": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\Data\\Migrations\\20240924082356_hoc.cs",
+              "RelativeDocumentMoniker": "BaiKiemTra02\\Data\\Migrations\\20240924082356_hoc.cs",
+              "ToolTip": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\Data\\Migrations\\20240924082356_hoc.cs",
+              "RelativeToolTip": "BaiKiemTra02\\Data\\Migrations\\20240924082356_hoc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T08:23:56.579Z"
             }
           ]
         },
