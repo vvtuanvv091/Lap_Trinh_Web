@@ -2,7 +2,42 @@
 @{
     ViewData["Title"] = "Index";
 }
+
 @model IEnumerable<SanPhamViewModel>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="~/css/site.css"> <!-- Link to your stylesheet -->
+</head>
+<body>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="@item.ImageUrl" class="card-img-top" alt="@item.Name" width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <h5 class="card-price">@item.price</h5>
+                        <p class="card-text">@item.Description</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="#" class="btn btn-primary">Thêm</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="btn btn-danger">Mua Hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</body>
+</html>
 @* <div class="container">
     <table class="table">
         <thead>
@@ -73,26 +108,3 @@
         })
     }
 </script> *@
-<div class="row">
-    @foreach(var item in Model)
-    {
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img src="@item.ImageUrl" class="card-img-top" alt="@item.Name" width="200px" height="200px">
-                <div class="card-body" width="200px" height="250">
-                    <h5 class="card-title">@item.Name</h5>
-                    <h5 class="card-title">@item.price</h5>
-                    <p class="card-text">@item.Description</p>
-                    <div class="row">
-                        <div class="col-6">
-                            <a href="#" class="btn btn-primary">Thêm</a>
-                        </div>
-                        <div class="col-6">
-                            <a href="#" class="btn btn-danger">Mua Hàng</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    }
-</div>

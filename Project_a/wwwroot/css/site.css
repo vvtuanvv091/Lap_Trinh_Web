@@ -1,4 +1,4 @@
-html {
+/*html {
   font-size: 14px;
 }
 
@@ -20,3 +20,17 @@ html {
 body {
   margin-bottom: 60px;
 }
+*/
+.card-body {
+    display: flex;
+    flex-direction: column;
+    
+}
+.card-title{
+    flex:1;
+    min-height:50px;
+}
+.card-price{
+    margin-top:auto;
+}
+
