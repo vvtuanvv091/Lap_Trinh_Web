@@ -36,8 +36,8 @@
                     </td>
                     <td >
                         <a asp-action="Upsert" asp-route-id="@item.Id">Sua</a>|
-                        @*                       <a asp-action="Details" asp-route-id="@item.Id">Detail</a> *@
-                       <a class="text-danger" class="btn btn-primary" onclick="xoa(@item.Id,$(this))">Deleted</a>
+                        <a asp-action="DetaI" asp-route-id="@item.Id">Detail</a>
+                        <a class="text-danger" class="btn btn-primary" onclick="confirmDelete(@item.Id,$(this))">Deleted</a>
                     </td>
                 </tr>
             }
@@ -46,13 +46,29 @@
      <a asp-controller="SanPham" asp-action="Upsert" class="btn btn-primary">Thêm Mới</a> 
 </div>
 <script>
+    var confirmDelete = (id, row) => {
+        // Sử dụng hàm confirm đúng
+        if (confirm("Bạn có chắc chắn muốn xóa không?")) {
+            xoa(id, $(row));
+        }
+    };
     function xoa(id,row)
     {
         $.ajax({
             url:`/Admin/SanPham/Deleted/${id}`,
             type:"POST",
             success:function(data){
-                row.closest("tr").remove();//xóa dòng trog bảng tr
+                if (data.success) {
+                    // nếu xóa thành công, xóa dòng trong bảng
+                    row.closest("tr").remove();
+                } else {
+                    // nếu có lỗi từ server, hiển thị thông báo lỗi
+                    alert(data.message);
+                }
+            },
+            error: function (xhr, status, error) {
+                // xử lý lỗi khi ajax gặp sự cố
+                alert("xóa thất bại: " + error);
             }
         })
     }

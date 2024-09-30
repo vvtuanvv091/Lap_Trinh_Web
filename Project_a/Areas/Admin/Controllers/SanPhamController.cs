@@ -89,6 +89,16 @@ namespace Project_a.Areas.Admin.Controllers
             return Json(new { success = true });
 
         }
+        [HttpGet]
+        public IActionResult detai(int id)
+        {
+            if (id == 0)
+            {
+                return NotFound();
+            }
+            var sanpham = _db.SanPham.Find(id);
+            return View(sanpham);
+        }
 
 
 
