@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Details";
+}
+@model SanPhamViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="~/css/site.css"> <!-- Link to your stylesheet -->
+</head>
+<body>
+    <h1>Product Details</h1>
+
+    <div>
+        <h2>@Model.Name</h2> 
+        <p><strong>Price:</strong> @Model.price</p> 
+        <p><strong>Description:</strong> @Model.Description</p> 
+        <p><strong>Category:</strong> @Model.TheLoai.Name</p>
+        <img src="@Model.ImageUrl" alt="@Model.Name" style="width:300px;height:300px;" /> 
+    </div>
+
+     @* <a href="@Url.Action("Index", "SanPham")">Back to Products</a> *@
+</body>
+</html>
+

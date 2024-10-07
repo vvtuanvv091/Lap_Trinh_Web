@@ -8,7 +8,7 @@ using System.Diagnostics;
 namespace Project_a.Controllers
 {
     [Area("Customer")]
-    [Authorize(Roles = "Customer")]
+    [Authorize(Roles = "User")]
     public class HomeController : Controller
     {
 
@@ -27,7 +27,11 @@ namespace Project_a.Controllers
 
             return View(sanpham);
         }
-
+        public IActionResult Details(int id)
+        {
+            SanPhamViewModel sanpham=_db.SanPham.Include(sp => sp.TheLoai).FirstOrDefault(sp =>sp.Id==id);
+            return View(sanpham);
+        } 
         public IActionResult Privacy()
         {
             return View();

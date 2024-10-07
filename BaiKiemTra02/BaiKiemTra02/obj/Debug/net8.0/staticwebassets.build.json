@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "flTf71N+by5Gwgb+j0yfeKRQ9v4G+Xiy1avD7WZ8c3w=",
+  "Hash": "qPbaxymRAjy52KFrWV9DNXn0L9jmudO9m0PhthC/uAo=",
   "Source": "BaiKiemTra02",
   "BasePath": "_content/BaiKiemTra02",
   "Mode": "Default",
@@ -1233,12 +1233,12 @@
       "OriginalItemSpec": "wwwroot\\anhchup\\Screenshot 2024-09-24 152514.png"
     },
     {
-      "Identity": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\wwwroot\\anhchup\\Screenshot 2024-09-24 152555.png",
+      "Identity": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\wwwroot\\anhchup\\Screenshot 2024-09-24 153821.png",
       "SourceId": "BaiKiemTra02",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\wwwroot\\",
       "BasePath": "_content/BaiKiemTra02",
-      "RelativePath": "anhchup/Screenshot 2024-09-24 152555.png",
+      "RelativePath": "anhchup/Screenshot 2024-09-24 153821.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1249,15 +1249,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\anhchup\\Screenshot 2024-09-24 152555.png"
+      "OriginalItemSpec": "wwwroot\\anhchup\\Screenshot 2024-09-24 153821.png"
     },
     {
-      "Identity": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\wwwroot\\anhchup\\Screenshot 2024-09-24 152729.png",
+      "Identity": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\wwwroot\\anhchup\\Screenshot 2024-09-24 153833.png",
       "SourceId": "BaiKiemTra02",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\wwwroot\\",
       "BasePath": "_content/BaiKiemTra02",
-      "RelativePath": "anhchup/Screenshot 2024-09-24 152729.png",
+      "RelativePath": "anhchup/Screenshot 2024-09-24 153833.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1268,15 +1268,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\anhchup\\Screenshot 2024-09-24 152729.png"
+      "OriginalItemSpec": "wwwroot\\anhchup\\Screenshot 2024-09-24 153833.png"
     },
     {
-      "Identity": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\wwwroot\\anhchup\\Screenshot 2024-09-24 152807.png",
+      "Identity": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\wwwroot\\anhchup\\Screenshot 2024-09-24 153845.png",
       "SourceId": "BaiKiemTra02",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\wwwroot\\",
       "BasePath": "_content/BaiKiemTra02",
-      "RelativePath": "anhchup/Screenshot 2024-09-24 152807.png",
+      "RelativePath": "anhchup/Screenshot 2024-09-24 153845.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1287,7 +1287,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\anhchup\\Screenshot 2024-09-24 152807.png"
+      "OriginalItemSpec": "wwwroot\\anhchup\\Screenshot 2024-09-24 153845.png"
+    },
+    {
+      "Identity": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\wwwroot\\anhchup\\Screenshot 2024-09-24 153859.png",
+      "SourceId": "BaiKiemTra02",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\wwwroot\\",
+      "BasePath": "_content/BaiKiemTra02",
+      "RelativePath": "anhchup/Screenshot 2024-09-24 153859.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\anhchup\\Screenshot 2024-09-24 153859.png"
     },
     {
       "Identity": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra02\\BaiKiemTra02\\wwwroot\\css\\site.css",

@@ -18,7 +18,10 @@
         {
             <div class="col-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="@item.ImageUrl" class="card-img-top" alt="@item.Name" width="200px" height="200px">
+                    <a asp-action="Details" asp-route-id="@item.Id" class="product-link">
+                        <img src="@item.ImageUrl" class="card-img-top" alt="@item.Name">
+                    </a>
+                    
                     <div class="card-body">
                         <h5 class="card-title">@item.Name</h5>
                         <h5 class="card-price">@item.price</h5>
