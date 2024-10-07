@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Create";
+}
+@model PhongBanViewModel;
+<div class="container">
+    <h3>Thêm Tên Phòng Ban</h3>
+    <form method="post">
+        <div class="text-danger" asp-validation-summary="All"></div>
+        <div class="form-group">
+            <label asp-for="tenphongban">TÊN PHÒNG BAN</label>
+            <input asp-for="tenphongban" type="text" class="form-control" />
+            <span asp-validation-for="tenphongban" class="text-danger" />
+        </div>
+        <div class="form-group">
+            <label asp-for="soluongnhanvien">SỐ LƯƠNG PHÒNG BAN</label>
+            <input asp-for="soluongnhanvien" type="number" class="form-control" />
+            <span asp-validation-for="soluongnhanvien" class="text-danger" />
+        </div>
+        <div class="form-group">
+            <label asp-for="phongbanquanli">Phòng Ban Quản lí</label>
+            <input asp-for="phongbanquanli" type="number" class="form-control" />
+            <span asp-validation-for="phongbanquanli" class="text-danger" />
+        </div>
+        <a asp-controller="PhongBan" asp-action="Index" class="btn btn-primary">Quay về</a>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+
+

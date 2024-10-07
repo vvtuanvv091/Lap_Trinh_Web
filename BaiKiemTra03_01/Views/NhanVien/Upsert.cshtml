@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Upsert";
+}
+@{
+    ViewData["Title"] = "Upsert";
+}
+@model NhanVienViewModel
+<div class="container">
+    <form mmethod="post" asp-action="Upsert">
+        <div class="form-group">
+            <label asp-for="tennhanvien">Tên Nhân Viên</label>
+            <input asp-for="tennhanvien" type="text" class="form-control" />
+            <span asp-validation-for="tennhanvien" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="chucvu">Chức Vụ</label>
+            <input asp-for="chucvu" type="text" class="form-control" />
+            <span asp-validation-for="chucvu"class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ngaybatdaulamviec">Ngày bắt đầu làm việc</label>
+            <input asp-for="ngaybatdaulamviec" type="date" class="form-control" />
+            <span asp-validation-for="ngaybatdaulamviec" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="phongbanid">Tên Thể Loại</label>
+            <select asp-for="phongbanid" asp-items="@ViewBag.DsTheLoai">
+                <option disabled>chọn tên phòng Ban</option>
+            </select>
+            <span asp-validation-for="phongbanid" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">@(Model.manhanvien == 0 ? "Tạo Mới" : "Cập Nhật")</button>
+        <a asp-action="Index" class="btn btn-primary">Hủy</a>
+    </form>
+</div>
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+

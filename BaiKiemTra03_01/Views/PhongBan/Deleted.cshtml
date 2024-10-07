@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Deleted";
+}
+@model PhongBanViewModel;
+<div class="container">
+    
+    <form method="post" asp-action="DeletedConfirm">
+        <input type="hidden" asp-for="maphongban" />
+        <div class="form-group">
+            <label asp-for="tenphongban">TÊN PHÒNG BAN</label>
+            <input asp-for="tenphongban" type="text" class="form-control" readonly />
+            <span asp-validation-for="tenphongban" class="text-danger" />
+        </div>
+        <div class="form-group">
+            <label asp-for="soluongnhanvien">SỐ LƯƠNG PHÒNG BAN</label>
+            <input asp-for="soluongnhanvien" type="number" class="form-control" readonly />
+            <span asp-validation-for="soluongnhanvien" class="text-danger" />
+        </div>
+        <div class="form-group">
+            <label asp-for="phongbanquanli">Phòng Ban Quản lí</label>
+            <input asp-for="phongbanquanli" type="number" class="form-control" readonly />
+            <span asp-validation-for="phongbanquanli" class="text-danger" />
+        </div>
+        <a asp-controller="PhongBan" asp-action="Index" class="btn btn-primary">Quay về</a>
+        <button type="submit" class="btn btn-primary">Deleted</button>
+    </form>
+
+</div>
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+

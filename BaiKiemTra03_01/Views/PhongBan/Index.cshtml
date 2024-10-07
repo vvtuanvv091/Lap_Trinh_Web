@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container">
+@*      <form asp-action="Search" method="get">
+         <input type="text" name="search" placeholder="Nhập thể loại cần tìm .." value="@ViewBag.Search" />
+         <input type="submit" value="Tìm kiếm" />
+    public  int maphongban {get; set;}
+    [Required]
+    public string  tenphongban {get; set;}
+    public int soluongnhanvien { get; set;}
+    public int phongbanquanli { get; set;}
+
+     </form> *@
+    <table class="table">
+        <thead>
+            <tr>
+                <th> tenphongban: </th>
+                <th>soluongnhanvien</th>
+                <th>phongbanquanli</th>
+            </tr>
+        </thead>
+        @foreach (var item in ViewBag.PhongBann)
+        {
+            <tbody>
+                <tr>
+                    <td width="20%">
+                        @item.tenphongban
+                    </td>
+                    <td width="20%">
+                        @item.soluongnhanvien
+                    </td>
+                    <td width="20%">
+                        @item.phongbanquanli
+                    </td>
+                    <td width="40%">
+                        <a asp-action="Edit" asp-route-id="@item.maphongban">Edit</a>
+                        <a asp-action="details" asp-route-id="@item.maphongban">Detail</a>
+                        <a asp-action="Deleted" asp-route-id="@item.maphongban">Deleted</a>
+
+                    </td>
+                </tr>
+
+            </tbody>
+        }
+    </table>
+    <a asp-controller="PhongBan" asp-action="Create" class="btn btn-primary">Thêm Mới</a>
+</div>
+
+

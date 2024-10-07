@@ -1,0 +1,81 @@
+﻿<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+@{
+    ViewData["Title"] = "Index";
+}
+@*  [Key]
+        public int manhanvien { get; set; }
+        [Required]
+        public string tennhanvien { get; set; }
+        public string chucvu {  get; set; }
+        public int phongbanid { get; set; }
+        public DateTime ngaybatdaulamviec { get; set; } = DateTime.Now;
+        [ForeignKey("phongbanid")]
+        public PhongBanViewModel phongban {get; set; } *@
+@model IEnumerable<NhanVienViewModel>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Tên Nhân Viên</th>
+                <th>Chức Vụ</th>
+                <th>ngaybatdaulamviec</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in @Model)
+            {
+                <tr>
+                    <td>
+                        @item.tennhanvien
+                    </td>
+                    <td>
+                        @item.chucvu
+                    </td>
+                    <td>
+                        @String.Format("{0:dd/MM/yyyy}", item.ngaybatdaulamviec)
+                    </td>
+                     @* <td>
+                         <img src="@item.ImageUrl" alt="Ảnh sản phẩm" class="img-thumbnail" width=200px height="200px" />
+                     </td> *@
+                    <td>
+                        @item.phongban.tenphongban
+                    </td>
+                    <td>
+                        <a asp-action="Upsert" asp-route-id="@item.manhanvien">Sua</a>|
+                        <a asp-action="DetaI" asp-route-id="@item.manhanvien">Detail</a>
+                        <a class="text-danger" class="btn btn-primary" onclick="confirmDelete(@item.manhanvien,$(this))">Deleted</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a asp-controller="NhanVien" asp-action="Upsert" class="btn btn-primary">Thêm Mới</a>
+</div>
+<script>
+    var confirmDelete = (id, row) => {
+        // Sử dụng hàm confirm đúng
+        if (confirm("Bạn có chắc chắn muốn xóa không?")) {
+            xoa(id, $(row));
+        }
+    };
+    function xoa(id,row)
+    {
+        $.ajax({
+            url:`NhanVien/Deleted/${manhanvien}`,
+            type:"POST",
+            success:function(data){
+                if (data.success) {
+                    // nếu xóa thành công, xóa dòng trong bảng
+                    row.closest("tr").remove();
+                } else {
+                    // nếu có lỗi từ server, hiển thị thông báo lỗi
+                    alert(data.message);
+                }
+            },
+            error: function (xhr, status, error) {
+                // xử lý lỗi khi ajax gặp sự cố
+                alert("xóa thất bại: " + error);
+            }
+        })
+    }
+</script>
