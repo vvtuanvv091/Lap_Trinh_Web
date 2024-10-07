@@ -39,23 +39,27 @@ namespace BaiKiemTra03_01.Controllers
         public IActionResult Upsert(int id)
         {
             NhanVienViewModel sp = new NhanVienViewModel();
-            IEnumerable<SelectListItem> dstheloai = _db.NhanVien.Select(
+
+            // Fetch the list of PhongBan (Departments) to display in the dropdown
+            IEnumerable<SelectListItem> dsPhongBan = _db.PhongBan.Select(
                 item => new SelectListItem
                 {
-                    Value = item.manhanvien.ToString(),
-                    Text = item.tennhanvien,
+                    Value = item.phongbanquanli.ToString(),
+                    Text = item.tenphongban, // Display department name
                 });
-            ViewBag.DsTheLoai = dstheloai;
+            ViewBag.DsPhongBan = dsPhongBan;
+
             if (id == 0)
             {
+                // Creating a new employee
                 return View(sp);
             }
             else
             {
+                // Editing an existing employee
                 sp = _db.NhanVien.Include("PhongBan").FirstOrDefault(s => s.manhanvien == id);
                 return View(sp);
             }
-
         }
         [HttpPost]
         public IActionResult Upsert(NhanVienViewModel sp)
