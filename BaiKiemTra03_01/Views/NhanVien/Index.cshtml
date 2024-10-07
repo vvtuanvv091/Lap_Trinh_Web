@@ -19,6 +19,7 @@
                 <th>Tên Nhân Viên</th>
                 <th>Chức Vụ</th>
                 <th>ngaybatdaulamviec</th>
+                <th>phòng ban</th>
             </tr>
         </thead>
         <tbody>
@@ -58,7 +59,7 @@
             xoa(id, $(row));
         }
     };
-    function xoa(id,row)
+    function xoa(manhanvien,row)
     {
         $.ajax({
             url:`NhanVien/Deleted/${manhanvien}`,

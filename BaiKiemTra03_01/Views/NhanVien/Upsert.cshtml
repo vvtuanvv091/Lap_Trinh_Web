@@ -24,9 +24,9 @@
             <span asp-validation-for="ngaybatdaulamviec" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label asp-for="phongbanid">Tên Thể Loại</label>
-            <select asp-for="phongbanid" asp-items="@ViewBag.DsTheLoai">
-                <option disabled>chọn tên phòng Ban</option>
+            <label asp-for="phongbanid">Tên phòng ban</label>
+            <select asp-for="phongbanid" asp-items="@ViewBag.DsPhongBan">
+                <option disabled selected>chọn tên phòng ban</option> <!-- Default selection -->
             </select>
             <span asp-validation-for="phongbanid" class="text-danger"></span>
         </div>
