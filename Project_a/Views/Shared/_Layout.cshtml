@@ -5,46 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Project_a</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Project_a.styles.css" asp-append-version="true" />
+     <link rel="stylesheet" href="~/Project_a.styles.css" asp-append-version="true" />
+    <title>Website của Tuấn</title>
+    <link rel="stylesheet" href="~/css/style.css"  type="text/css" media="all" />
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-func.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Project_a</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                    <partial name="_LoginPartial" />
-                </div>
+   @*  <header class="header">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="#">movie hunter</a>
+        </div>
+
+        <!-- Main Menu with Login/Signup -->
+        <nav class="main-menu">
+            <ul class="menu-items">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">In Theaters</a></li>
+                <li><a href="#">Coming Soon</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Advertise</a></li>
+            </ul>
+
+            <!-- Login/Signup Partial -->
+            <div class="auth-links">
+                <partial name="_LoginPartial" />
             </div>
         </nav>
+
+        <!-- Sub-Menu with Search Bar -->
+        <div class="sub-menu">
+            <ul>
+                <li><a href="#">Show All</a></li>
+                <li><a href="#">Latest Trailers</a></li>
+                <li><a href="#">Top Rated</a></li>
+                <li><a href="#">Most Commented</a></li>
+            </ul>
+            <div class="search-bar">
+                <span>Search</span>
+                <input type="text" placeholder="Enter search here" />
+                <button>GO!</button>
+            </div>
+        </div>
+    </header> *@
+    <header class="header">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="#">movie hunter</a>
+        </div>
+
+        <!-- Main Menu with Login/Signup -->
+        <nav class="main-menu">
+            <ul class="menu-items">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">In Theaters</a>
+                    <ul class="submenu">
+ @*                        <li><a href="#">Phim Anime</a></li>
+                        <li><a href="#">Phim Tình Cảm</a></li>
+                        <li><a href="#">Phim Ma</a></li>
+                        <li><a href="#">Phim Hài Hước</a></li>
+                        <li><a href="#">Phim Hành Động</a></li> *@
+                        @* <vc:the-loai></vc:the-loai>; *@
+                        @await Component.InvokeAsync("TheLoai")
+                    </ul>
+                </li>
+
+                <li><a href="#">Coming Soon</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Advertise</a></li>
+            </ul>
+
+            <!-- Partial Login/Signup -->
+            <ul class="auth-links">
+                @using Microsoft.AspNetCore.Identity
+                @inject SignInManager<IdentityUser> SignInManager
+                @inject UserManager<IdentityUser> UserManager
+
+                @if (SignInManager.IsSignedIn(User))
+
+                {
+                    <li>
+                        <a class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index">
+                            Hello @User.Identity?.Name!
+                        </a>
+                    </li>
+                    <li>
+                        <form asp-area="Identity" asp-page="/Account/Logout"
+                              asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                            <button type="submit" class="btn btn-link nav-link">Logout</button>
+                        </form>
+                    </li>
+                }
+
+                else
+
+                {
+                    <li><a class="nav-link" asp-area="Identity" asp-page="/Account/Register">Dang Ky</a></li>
+                    <li><a class="nav-link" asp-area="Identity" asp-page="/Account/Login">Đăng Nhập</a></li>
+                }
+            </ul>
+        </nav>
+
+        <!-- Sub-Menu with Search Bar -->
+        <div class="sub-menu">
+            <ul>
+                <li><a href="#">Show All</a></li>
+                <li><a href="#">Latest Trailers</a></li>
+                <li><a href="#">Top Rated</a></li>
+                <li><a href="#">Most Commented</a></li>
+            </ul>
+            <div class="search-bar">
+                <span>Search</span>
+                <input type="text" placeholder="Enter search here" />
+                <button>GO!</button>
+            </div>
+        </div>
     </header>
-    <div class="container">
+    
+    @* <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
+    </div> *@
+    <div class="wrapper">
         <div class="container">
-            &copy; 2024 - Project_a - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <main role="main" class="pb-3">
+                @RenderBody() <!-- Nội dung chính -->
+            </main>
         </div>
-    </footer>
+
+     <footer>
+         <div class="footer-container">
+             <div class="footer-social">
+                 <p>Follow IMDb on social</p>
+                 <div class="social-icons">
+                     <a href="#" class="social-icon">TikTok</a>
+                     <a href="#" class="social-icon">Instagram</a>
+                     <a href="#" class="social-icon">X</a>
+                     <a href="#" class="social-icon">YouTube</a>
+                     <a href="#" class="social-icon">Facebook</a>
+                 </div>
+             </div>
+             <div class="footer-links">
+                 <a href="#">Help</a>
+                 <a href="#">Site Index</a>
+                 <a href="#">IMDbPro</a>
+                 <a href="#">Box Office Mojo</a>
+                 <a href="#">License IMDb Data</a>
+                 <a href="#">Press Room</a>
+                 <a href="#">Advertising</a>
+                 <a href="#">Jobs</a>
+                 <a href="#">Conditions of Use</a>
+                 <a href="#">Privacy Policy</a>
+                 <a href="#">Your Ads Privacy Choices</a>
+             </div>
+             <p class="footer-text">© 1990-2024 by IMDb.com, Inc. an Amazon company</p>
+         </div>
+     </footer>  
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/bootstrap/dist/~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

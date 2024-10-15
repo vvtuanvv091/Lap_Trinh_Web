@@ -1,29 +1,334 @@
-﻿
-@{
-    ViewData["Title"] = "Details";
-}
-@model SanPhamViewModel
+﻿@* @model SanPhamViewModel
+<style>
+    .col-md-6 {
+        background-color:white;
+    }
+    .product-image {
+        max-width: 100%;
+        height: auto;
+    }
+ 
+    .quantity-control {
+        display: flex;
+        justify-content: left;
+        align-items:flex-start;
+    }
+ 
+    .quantity-control button {
+        width: 40px;
+        height: 40px;
+    }
+ 
+    .quantity-input {
+        width: 60px;
+        text-align: center;
+    }
+</style>
+ <div class="container mt-5">
+ <div class="row">
+ <!-- Product Image -->
+ <div class="col-md-6">
+ <img src="@Model.ImageUrl" alt="Product Image" class="product-image">
+ </div>
+ 
+         <!-- Product Details -->
+ <div class="col-md-6">
+ <h1 class="product-title">@Model.Name</h1>
+ <p class="product-description">@Model.Description</p>
+ <h4 class="product-price text-danger">
+                 @Model.price.ToString("N0") đ
+ </h4>
+ 
+             <!-- Quantity Selector -->
+ <div class="quantity-control my-3">
+ <button class="btn btn-outline-secondary" onclick="decreaseQuantity()">-</button>
+ <input type="text" class="form-control quantity-input mx-2" id="quantity" value="1" readonly>
+ <button class="btn btn-outline-secondary" onclick="increaseQuantity()">+</button>
+ </div>
+ 
+             <!-- Add to Cart Button -->
+ <button class="btn btn-danger" >Mua ngay</button>
+ <button class="btn btn-primary" onclick="addToCart()">Thêm vào giỏ hàng</button>
+ 
+             <!-- Success Message -->
+ <div id="cart-message" class="alert alert-success mt-3 d-none">
+                 Product added to cart successfully!
+ </div>
+ </div>
+ </div> <!-- Custom JavaScript -->
+ <script>
+         function increaseQuantity() {
+             var quantityInput = document.getElementById('quantity');
+             var currentValue = parseInt(quantityInput.value);
+             quantityInput.value = currentValue + 1;
+         }
+ 
+         function decreaseQuantity() {
+             var quantityInput = document.getElementById('quantity');
+             var currentValue = parseInt(quantityInput.value);
+             if (currentValue > 1) {
+                 quantityInput.value = currentValue - 1;
+             }
+         }
+ 
+         function addToCart() {
+             var quantity = document.getElementById('quantity').value;
+             var messageDiv = document.getElementById('cart-message');
+ 
+             // Display success message
+             messageDiv.classList.remove('d-none');
+             messageDiv.textContent = 'Product added to cart! Quantity: ' + quantity;
+ 
+             // Optionally, you can reset the quantity back to 1 after adding to cart
+             document.getElementById('quantity').value = 1;
+ 
+             // Hide message after 3 seconds
+             setTimeout(function () {
+                 messageDiv.classList.add('d-none');
+             }, 3000);
+         }
+ </script>
+ </div>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details</title>
-    <link rel="stylesheet" href="~/css/site.css"> <!-- Link to your stylesheet -->
-</head>
-<body>
-    <h1>Product Details</h1>
+ *@
+ @model GioHangViewModel
 
-    <div>
-        <h2>@Model.Name</h2> 
-        <p><strong>Price:</strong> @Model.price</p> 
-        <p><strong>Description:</strong> @Model.Description</p> 
-        <p><strong>Category:</strong> @Model.TheLoai.Name</p>
-        <img src="@Model.ImageUrl" alt="@Model.Name" style="width:300px;height:300px;" /> 
+    <style>
+        .container {
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Main product container */
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        /* Product image section */
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Thumbnail gallery */
+        .thumbnail-gallery {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .thumbnail {
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .thumbnail:hover {
+            border: 2px solid #ff6347; /* Orange border on hover */
+        }
+
+        .selected-thumbnail {
+            border: 2px solid #ff6347; /* Orange border for selected thumbnail */
+        }
+
+        /* Product details section */
+        .product-details {
+            max-width: 500px;
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .product-description {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .product-price {
+            font-size: 24px;
+            color: #e5533d;
+            font-weight: bold;
+        }
+
+        /* Quantity control styling */
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .quantity-control button {
+            width: 40px;
+            height: 40px;
+        }
+
+        .quantity-input {
+            width: 60px;
+            text-align: center;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+
+        /* Add to cart and buy buttons */
+        .action-buttons {
+            margin: 20px 0;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+
+        .btn-danger {
+            background-color: #e5533d;
+            border: none;
+        }
+
+        .btn-danger:hover {
+            background-color: #c9432b;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Cart message styling */
+        #cart-message {
+            font-size: 16px;
+            color: green;
+        }
+    </style>
+<form asp-action="Details" asp-controller="Home" method="post">
+    <input type="hidden" asp-for="SanPhamId" value="@Model.SanPhamId"/>
+    <div class="container mt-5">
+        <div class="row product-container">
+            <!-- Product Image with Thumbnails -->
+            <div class="col-md-6">
+                <img id="main-product-image" src="@Model.SanPham.ImageUrl" alt="Product Image" class="product-image">
+                <div class="thumbnail-gallery">
+                    <img src="@Model.SanPham.ImageUrl" class="thumbnail selected-thumbnail" onclick="changeImage(this)">
+               
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="col-md-6 product-details">
+                <h1 class="product-title">@Model.SanPham.Name</h1>
+                <p class="product-description">@Model.SanPham.Description</p>
+                <h4 class="product-price">@Model.SanPham.price.ToString("N0") đ</h4>
+
+@*                 <!-- Quantity Selector -->
+                <div class="quantity-control">
+                    <a class="btn btn-outline-secondary" onclick="decreaseQuantity()">-</a>
+                    <input type="text" class="form-control quantity-input" id="quantity" value="1" readonly>
+                    <a class="btn btn-outline-secondary" onclick="increaseQuantity()">+</a>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="btn btn-danger">Mua ngay</button>
+                    <button class="btn btn-primary" onclick="addToCart()">Thêm vào giỏ hàng</button>
+                </div> *@
+@*             <div class="details-filter-row details-row-size">
+                <label for="qty">Qty:</label>
+                <div class="product-details-quantity">
+                    <input asp-for="Quantity" value="@Model.Quantity"
+                           type="number" id="qty" class="form-control"
+                           min="1" max="10" step="1" data-decimals="0" required>
+                </div>
+            </div> *@
+
+            <!-- Quantity Selector -->
+            <div class="quantity-control mt-3">
+                <button class="btn btn-outline-secondary" onclick="decreaseQuantity()">-</button>
+                    <input type="text" asp-for="Quantity" value="@Model.Quantity" class="form-control quantity-input" id="quantity" value="1" readonly>
+                <button class="btn btn-outline-secondary" onclick="increaseQuantity()">+</button>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons mt-3">
+                <button class="btn btn-danger">Mua ngay</button>
+                <button class="btn btn-primary" onclick="addToCart()">Thêm vào giỏ hàng</button>
+            </div>
+@*                  <div class="product-details-action">
+                     <button type="submit" class="btn-product btn-cart"><span>add to card
+                         </span></button>
+                     <div class="details-action-wrapper">
+                         <a href="#" class="btn-product btn-wishlist" title="Wishlist"><spam>Add to Wishlist</spam></a>
+                         <a href="#" class="btn-product btn-compare" title="Compare"><spam>Add to Compare</spam></a>
+                     </div>
+
+                 </div> *@
+                <!-- Success Message -->
+                <div id="cart-message" class="alert alert-success mt-3 d-none">
+                    Product added to cart successfully!
+                </div>
+            </div>
+        </div>
     </div>
 
-     @* <a href="@Url.Action("Index", "SanPham")">Back to Products</a> *@
-</body>
-</html>
+    <!-- Custom JavaScript -->
+    <script>
+        function changeImage(element) {
+            var mainImage = document.getElementById('main-product-image');
+            mainImage.src = element.src;
 
+            // Remove 'selected-thumbnail' class from all thumbnails
+            var thumbnails = document.getElementsByClassName('thumbnail');
+            for (var i = 0; i < thumbnails.length; i++) {
+                thumbnails[i].classList.remove('selected-thumbnail');
+            }
+
+            // Add 'selected-thumbnail' class to clicked thumbnail
+            element.classList.add('selected-thumbnail');
+        }
+
+        function increaseQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            var currentValue = parseInt(quantityInput.value);
+            quantityInput.value = currentValue + 1;
+        }
+
+        function decreaseQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            var currentValue = parseInt(quantityInput.value);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        }
+
+    //     function addToCart() {
+    //         var quantity = document.getElementById('quantity').value;
+    //         var messageDiv = document.getElementById('cart-message');
+
+    //         Display success message
+    //         messageDiv.classList.remove('d-none');
+    //         messageDiv.textContent = 'Product added to cart! Quantity: ' + quantity;
+
+    //         Optionally, reset quantity back to 1 after adding to cart
+    //         document.getElementById('quantity').value = 1;
+
+    //         Hide message after 3 seconds
+    //         setTimeout(function () {
+    //             messageDiv.classList.add('d-none');
+    //         }, 3000);
+    //     }
+    // </script>
+</form>
+    

@@ -1,0 +1,237 @@
+﻿/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container main {
+    color: black;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:gray;
+    
+    color: #fff;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* Header Styles */
+.header {
+    background-color: #000;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Logo */
+.logo a {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Main Menu (Menu + Login/Signup) */
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-items {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+    .menu-items a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+        .menu-items a:hover,
+        .menu-items .active {
+            color: #ff6347;
+        }
+
+/* Submenu */
+.submenu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: #000;
+    padding: 10px;
+    list-style-type: none;
+}
+.sub-menu #item-sub{
+    text-decoration:none;
+}
+.menu-items li:hover .submenu {
+    display: block;
+}
+.sub-item.submenu {
+    list-style-type: none;
+}
+
+
+/* Auth Links (Partial Login/Signup) */
+.auth-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    align-items: center;
+}
+
+    .auth-links a,
+    .auth-links button {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+        .auth-links a:hover,
+        .auth-links button:hover {
+            color: #ff6347;
+        }
+
+/* Sub-Menu */
+.sub-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+}
+
+    .sub-menu ul {
+        display: flex;
+        list-style: none;
+        gap: 15px;
+    }
+
+    .sub-menu a {
+        text-decoration: none;
+        color: #bbb;
+        font-size: 14px;
+        transition: color 0.3s;
+    }
+
+        .sub-menu a:hover {
+            color: #ff6347;
+        }
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    .search-bar input {
+        padding: 5px;
+        width: 200px;
+        border: 1px solid #444;
+        background-color: #000;
+        color: #fff;
+        outline: none;
+    }
+
+    .search-bar button {
+        padding: 5px 10px;
+        background-color: #ff6347;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .search-bar button:hover {
+            background-color: #e5533d;
+        }
+
+/* Bố cục chính với Flexbox */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Chiều cao tối thiểu là 100% chiều cao viewport */
+}
+
+/* Phần nội dung chính */
+.container {
+    flex: 1; /* Chiếm toàn bộ không gian còn lại để đẩy footer xuống */
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-social {
+    margin-bottom: 20px;
+}
+
+    .footer-social p {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+    .social-icon:hover {
+        color: #ff6347;
+    }
+
+.footer-links {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .footer-links a {
+        color: #fff;
+        text-decoration: none;
+        margin: 5px 10px;
+        transition: color 0.3s;
+    }
+
+        .footer-links a:hover {
+            color: #ff6347;
+        }
+
+.footer-text {
+    font-size: 14px;
+    margin-top: 20px;
+}

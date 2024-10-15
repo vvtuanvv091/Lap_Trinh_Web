@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+wG57dLCrSsrPlzKfbylZeMW17FYbgQNPctIPqZFZt8=",
+  "Hash": "HMzVC6XyYPVb2/7TwCYq/DiuOJZI4XNU6V9h7wNczTU=",
   "Source": "Project_a",
   "BasePath": "_content/Project_a",
   "Mode": "Default",
@@ -1212,6 +1212,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Project_a\\wwwroot\\css\\style.css",
+      "SourceId": "Project_a",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Project_a\\wwwroot\\",
+      "BasePath": "_content/Project_a",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
       "Identity": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\Project_a\\wwwroot\\favicon.ico",

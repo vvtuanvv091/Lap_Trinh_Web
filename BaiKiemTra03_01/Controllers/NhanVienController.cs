@@ -13,171 +13,54 @@ namespace BaiKiemTra03_01.Controllers
         {
             _db = db;
         }
-        [HttpGet]
         public IActionResult Index()
         {
-             IEnumerable<NhanVienViewModel> Nhanvien = _db.NhanVien
-            .Include(nv => nv.phongban) // Dùng lambda expression thay vì chuỗi
-            .Select(nv => new NhanVienViewModel
-            {
-                manhanvien = nv.manhanvien,
-                tennhanvien = nv.tennhanvien,
-                chucvu = nv.chucvu,
-                phongban = new PhongBanViewModel
-                {
-                    maphongban = nv.phongban.maphongban, // Chuyển đổi sang ViewModel
-                    tenphongban = nv.phongban.tenphongban,
-                },
-                ngaybatdaulamviec = nv.ngaybatdaulamviec
-            })
-            .ToList();
-
-                    return View(Nhanvien);
-
+            IEnumerable<NhanVienViewModel> nhanViens = _db.NhanVien.Include(nv => nv.phongban).ToList();
+            return View(nhanViens);
         }
         [HttpGet]
-
-        //public IActionResult Upsert(int id)
-        //{
-        //    NhanVienViewModel sp = new NhanVienViewModel();
-
-        //    // Fetch the list of PhongBan (Departments) to display in the dropdown
-        //    IEnumerable<SelectListItem> dsPhongBan = _db.PhongBan.Select(
-        //        item => new SelectListItem
-        //        {
-        //            Value = item.phongbanquanli.ToString(),
-        //            Text = item.tenphongban, // Display department name
-        //        }).ToList(); // Make sure to call ToList() to materialize the query
-
-        //    ViewBag.DsPhongBan = dsPhongBan; // Make sure this matches your view
-
-        //    if (id == 0)
-        //    {
-        //        // Creating a new employee
-        //        return View(sp);
-        //    }
-        //    else
-        //    {
-        //        // Editing an existing employee
-        //        sp = _db.NhanVien.Include("PhongBan").FirstOrDefault(s => s.manhanvien == id);
-        //        return View(sp);
-        //    }
-        //}
-        //[HttpPost]
-        //public IActionResult Upsert(NhanVienViewModel sp)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        if (sp.manhanvien == 0)
-        //        {
-        //            _db.NhanVien.Add(sp);
-        //        }
-        //        else
-        //        {
-        //            _db.NhanVien.Update(sp);
-
-        //        }
-        //        _db.SaveChanges();
-        //        return RedirectToAction("Index");
-
-        //    }
-        //    return View();
-        //}
-        [HttpGet]
-        public IActionResult Upsert(int id = 0)
+        public IActionResult Upsert(int id)
         {
             NhanVienViewModel sp = new NhanVienViewModel();
-
-            // Fetch the list of PhongBan (Departments) to display in the dropdown
-            IEnumerable<SelectListItem> dsPhongBan = _db.PhongBan.Select(
+            IEnumerable<SelectListItem> dstheloai = _db.PhongBan.Select(
                 item => new SelectListItem
                 {
                     Value = item.maphongban.ToString(),
-                    Text = item.tenphongban // Display department name
-                }).ToList();
-
-            ViewBag.DsPhongBan = dsPhongBan;
-
+                    Text = item.tenphongban,
+                });
+            ViewBag.DsTheLoai = dstheloai;
             if (id == 0)
             {
-                // Creating a new employee
                 return View(sp);
             }
             else
             {
-                // Editing an existing employee
-                sp = _db.NhanVien
-                         .Include(nv => nv.phongban)
-                         .Select(nv => new NhanVienViewModel
-                         {
-                             manhanvien = nv.manhanvien,
-                             tennhanvien = nv.tennhanvien,
-                             chucvu = nv.chucvu,
-                             phongban = new PhongBanViewModel
-                             {
-                                 maphongban = nv.phongban.maphongban,
-                                 tenphongban = nv.phongban.tenphongban,
-                             },
-                             ngaybatdaulamviec = nv.ngaybatdaulamviec
-                         })
-                         .FirstOrDefault(s => s.manhanvien == id);
-
-                if (sp == null)
-                {
-                    return NotFound(); // Handle the case when the employee does not exist
-                }
-
+                sp = _db.NhanVien.Include(nv => nv.phongban).FirstOrDefault(s => s.manhanvien == id);
                 return View(sp);
             }
-        }
 
+        }
         [HttpPost]
         public IActionResult Upsert(NhanVienViewModel sp)
         {
-            // Ensure that the list of departments is available in case of validation failure
-            IEnumerable<SelectListItem> dsPhongBan = _db.PhongBan.Select(
-                item => new SelectListItem
-                {
-                    Value = item.maphongban.ToString(),
-                    Text = item.tenphongban
-                }).ToList();
-            ViewBag.DsPhongBan = dsPhongBan;
-
             if (ModelState.IsValid)
             {
                 if (sp.manhanvien == 0)
                 {
-                    // Create a new employee entity from the view model
-                    var newEmployee = new NhanVienViewModel
-                    {
-                        tennhanvien = sp.tennhanvien,
-                        chucvu = sp.chucvu,
-                        phongban = _db.PhongBan.Find(sp.phongban.maphongban), // Ensure the correct department is linked
-                        ngaybatdaulamviec = sp.ngaybatdaulamviec
-                    };
-                    _db.NhanVien.Add(newEmployee);
+                    _db.NhanVien.Add(sp);
                 }
                 else
                 {
-                    // Update existing employee
-                    var existingEmployee = _db.NhanVien.Find(sp.manhanvien);
-                    if (existingEmployee != null)
-                    {
-                        existingEmployee.tennhanvien = sp.tennhanvien;
-                        existingEmployee.chucvu = sp.chucvu;
-                        existingEmployee.phongban = _db.PhongBan.Find(sp.phongban.maphongban); // Update the department
-                        existingEmployee.ngaybatdaulamviec = sp.ngaybatdaulamviec;
-                        _db.NhanVien.Update(existingEmployee);
-                    }
-                }
+                    _db.NhanVien.Update(sp);
 
+                }
                 _db.SaveChanges();
                 return RedirectToAction("Index");
-            }
 
-            // Return the view with the original model to display validation errors
+            }
             return View(sp);
         }
+
         [HttpGet]
         public IActionResult Delete(int id)
         {

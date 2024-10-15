@@ -2,11 +2,12 @@
 using Project_a.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
 
 namespace Project_a.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles ="Admin")]
+    //[Authorize(Roles ="Admin")]
     public class TheLoaiController : Controller
     {
         private readonly ApplicationDbContext _db;
@@ -30,6 +31,7 @@ namespace Project_a.Admin.Controllers
             }
             return View();
         }
+
         public IActionResult Index()
         {
             var theloai =_db.TheLoai.ToList();
@@ -106,7 +108,7 @@ namespace Project_a.Admin.Controllers
             }
             return View("Index");
         }
-
+       
 
     }
 }

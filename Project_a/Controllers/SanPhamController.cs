@@ -9,7 +9,7 @@ using Project_a.Models;
 namespace Project_a.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public class SanPhamController : Controller
     {
         public readonly ApplicationDbContext _db;
@@ -101,7 +101,7 @@ namespace Project_a.Areas.Admin.Controllers
             var sanpham = _db.SanPham.Find(id);
             return View(sanpham);
         }
-
+       
 
 
     }

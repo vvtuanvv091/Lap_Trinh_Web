@@ -67,7 +67,8 @@ namespace BaiKiemTra03_01.Data.Migrations
 
                     b.Property<string>("tenphongban")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("maphongban");
 

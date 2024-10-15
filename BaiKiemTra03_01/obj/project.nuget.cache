@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GAJO64O5WgA=",
+  "dgSpecHash": "V8tFroDycRI=",
   "success": true,
-  "projectFilePath": "D:\\Lap_trinh_web\\Lap_Trinh_Web\\BaiKiemTra03_01\\BaiKiemTra03_01.csproj",
+  "projectFilePath": "D:\\Lap_trinh_web\\Noiluu_tru_cac_bai_tap\\BaiKiemTra03_01\\BaiKiemTra03_01.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

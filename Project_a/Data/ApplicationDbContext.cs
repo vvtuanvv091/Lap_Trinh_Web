@@ -15,5 +15,6 @@ namespace Project_a.Data
         public DbSet<TheLoaiViewModel>TheLoai { get; set; }
         public DbSet<SanPhamViewModel>SanPham { get; set; }
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
+        public DbSet<GioHangViewModel> GioHang { get; set; }
     }
 }

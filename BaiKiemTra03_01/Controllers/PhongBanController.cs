@@ -11,7 +11,7 @@ namespace BaiKiemTra03_01.Controllers
         {
             _db = db;
         }
-        [HttpGet]
+       
         public IActionResult Index()
         {
             var pb = _db.PhongBan.ToList();
@@ -19,6 +19,7 @@ namespace BaiKiemTra03_01.Controllers
             return View();
             
         }
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
@@ -42,8 +43,8 @@ namespace BaiKiemTra03_01.Controllers
             {
                 return NotFound();
             }
-            var theloai = _db.PhongBan.Find(id);
-            return View(theloai);
+            var pb = _db.PhongBan.Find(id);
+            return View(pb);
         }
         [HttpPost]
         public IActionResult Edit(PhongBanViewModel pb)
@@ -53,6 +54,7 @@ namespace BaiKiemTra03_01.Controllers
                 _db.PhongBan.Update(pb);
                 _db.SaveChanges();
                 return RedirectToAction("Index");
+
             }
             return View();
         }
@@ -70,23 +72,15 @@ namespace BaiKiemTra03_01.Controllers
                 return NotFound();
             }
 
-            return View(pb);
-        }
-
-        // POST: DeletedConfirm
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult DeletedConfirm(int id)
-        {
-            var pb = _db.PhongBan.Find(id);
-            if (pb == null)
+            var viewModel = new PhongBanViewModel
             {
-                return NotFound();
-            }
+                maphongban = pb.maphongban,
+                tenphongban = pb.tenphongban,
+                soluongnhanvien = pb.soluongnhanvien,
+                phongbanquanli = pb.phongbanquanli,
+            };
 
-            _db.PhongBan.Remove(pb);
-            _db.SaveChanges();
-            return RedirectToAction("Index");
+            return View(viewModel);
         }
         [HttpGet]
         public IActionResult details(int id)
@@ -98,6 +92,23 @@ namespace BaiKiemTra03_01.Controllers
             var pb = _db.PhongBan.Find(id);
             return View(pb);
         }
+
+        // POST: DeletedConfirm
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeletedConfirm(PhongBanViewModel pb)
+        {
+            var phongBan = _db.PhongBan.Find(pb.maphongban);
+            if (phongBan == null)
+            {
+                return NotFound();
+            }
+
+            _db.PhongBan.Remove(phongBan);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
 
     }
 }

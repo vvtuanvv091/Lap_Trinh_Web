@@ -1,9 +1,8 @@
-﻿@{
-    ViewData["Title"] = "Edit";
-}
+﻿
 @model PhongBanViewModel;
 <div class="container">
     <form method="post" asp-action="Edit">
+        <input type="hidden" asp-for="maphongban" />
         <div class="text-danger" asp-validation-summary="All"></div>
         <div class="form-group">
             <label asp-for="tenphongban">TÊN PHÒNG BAN</label>
@@ -21,7 +20,7 @@
             <span asp-validation-for="phongbanquanli" class="text-danger" />
         </div>
         <a asp-controller="PhongBan" asp-action="Index" class="btn btn-primary">Quay về</a>
-        <button type="submit" class="btn btn-primary">Edit</button>
+        <button type="submit" class="btn btn-primary" asp-action="Edit">Edit</button>
     </form>
 
 </div>

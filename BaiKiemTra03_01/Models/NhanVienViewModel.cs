@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BaiKiemTra03_01.Models
@@ -13,6 +14,7 @@ namespace BaiKiemTra03_01.Models
         public int phongbanid { get; set; }
         public DateTime ngaybatdaulamviec { get; set; } = DateTime.Now;
         [ForeignKey("phongbanid")]
+        [ValidateNever]
         public PhongBanViewModel phongban {get; set; }
     }
 }
